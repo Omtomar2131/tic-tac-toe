@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.winner {
+    
+    background-color: #fffa65;
+    color: #ffa502;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.new-game {
+    position: -ms-page;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.new-game:hover {
+    background-color: #0073e6;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    width: 390px;
+    height: 390px;
+    justify-content: center;
+    align-items: center;
+}
+
+button.box {
+    background-color: aqua;
+    width: 120px;
+    height: 120px;
+    font-size: 2.5rem;
+    color: #b71a1a;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    text-decoration: #0073e6;
+}
+
+button.reset {
+    padding: 15px;
+    background-color: #fffa65;
+    border: 2px solid yellowgreen;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.reset:hover {
+    background-color: #ffa502;
+    transform: scale(1.05);
+}
+.hide{
+    display: none;
+}
